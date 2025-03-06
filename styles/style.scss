@@ -6,7 +6,7 @@
 }
 
 ::selection {
-  background: rgba(235, 129, 55, 1);
+  background: rgba(23, 45, 131, 1);
   color: white;
 }
 
@@ -21,5 +21,29 @@
   z-index: 200;
 }
 
-@import "index";
+#mini-routes {
+  background-color: rgba(247, 247, 247, 1);
+  padding: 30px 0px;
+  .routes {
+    display: flex;
+    gap: 8px;
+    width: 80%;
+    margin: auto;
+    .route {
+      color: rgba(23, 45, 131, 1);
+      text-decoration: none;
+    }
+    .active {
+      color: rgba(100, 92, 95, 1);
+    }
+    i {
+      color: rgba(100, 92, 95, 1);
+      font-size: 14px;
+    }
+  }
+}
 
+@import "layout";
+@import "index";
+@import "products";
+@import "products-detail";

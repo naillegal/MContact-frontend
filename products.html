@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>MContact - Məhsullar</title>
+  </head>
+  <body>
+
+    <header id="layout-header">
+      <div class="header-bg">
+        <div class="header-container">
+          <div class="logo">
+            <img src="images/mcontact-blue-logo.png" alt="MContact Logo" />
+          </div>
+          <nav class="navbar">
+            <ul>
+              <li><a href="index.html">Əsas səhifə</a></li>
+              <li><a href="#">Haqqımızda</a></li>
+              <li><a href="products.html">Məhsullar</a></li>
+              <li><a href="#">Bloq</a></li>
+              <li><a href="#">Əlaqə</a></li>
+            </ul>
+          </nav>
+          <div class="responsive-navbar">
+            <i class="fa-solid fa-bars"></i>
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+          </div>
+          <div class="header-icons">
+            <a href="#"><i class="fa fa-shopping-cart"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+          </div>
+        </div>
+
+        <div class="responsive-header-container">
+          <ul class="list-unstyled outside-ul">
+            <li>
+              <div>
+                <a href="index.html">Əsas səhifə</a>
+              </div>
+              <div class="openmenu-divider-outside"></div>
+            </li>
+            <li>
+              <div>
+                <a href="#">Haqqımızda</a>
+              </div>
+              <div class="openmenu-divider-outside"></div>
+            </li>
+            <li><a href="products.html">Məhsullar</a></li>
+            <div class="openmenu-divider-outside"></div>
+            <li><a href="#">Bloq</a></li>
+            <div class="openmenu-divider-outside"></div>
+            <li>
+              <div>
+                <a href="#">Əlaqə</a>
+              </div>
+              <div class="openmenu-divider-outside"></div>
+            </li>
+          </ul>
+          <div
+            class="close-responsive-header-container d-flex justify-content-center"
+          >
+            <button>Bağla</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="mini-routes">
+      <div class="routes">
+        <a href="index.html" class="route">Əsas səhifə</a>
+        <div><i class="fa-solid fa-chevron-right"></i></div>
+        <a class="route active">Məhsullar</a>
+      </div>
+    </section>
+
+    <section id="products-container">
+      <div class="products-container-content">
+        <h3>Məhsullar</h3>
+      </div>
+      <div class="regulation-products">
+        <div class="regulation-products-content-wrapper">
+          <div class="regulation-products-content">
+            <div><i class="fa-brands fa-elementor"></i></div>
+            <div>Tənzimləmə</div>
+          </div>
+          <div class="regulation-products-dropdown">
+            <div class="cheapest">Əvvəlcə ucuz</div>
+            <div class="expensive">Əvvəlcə baha</div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-and-products">
+        <div class="filter">
+          <div class="filter-title">Filter</div>
+          <div class="filter-by">
+            <div class="toggle-filter">
+              <div class="filter-by-name">Brendlər</div>
+              <div class="filter-by-icon">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+
+            <div class="filter-dropdown">
+              <ul>
+                <li>İnnovasiya Home</li>
+                <li>Aparat Kitchen</li>
+                <li>Estetika Living</li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter-by">
+            <div class="toggle-filter">
+              <div class="filter-by-name">Kateqoriyalar</div>
+              <div class="filter-by-icon">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="filter-dropdown">
+              <ul>
+                <li>Çəkməcə Sistemləri</li>
+                <li>Mətbəx Ləvazimatları</li>
+                <li>Ev Dekorasiyası və Aksessuarlar</li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter-by">
+            <div class="toggle-filter">
+              <div class="filter-by-name">Qiymət</div>
+              <div class="filter-by-icon">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="filter-dropdown">
+              <div class="price-avg">
+                <div class="min-price">
+                  <input placeholder="Min" type="number" />
+                </div>
+                <div class="max-price">
+                  <input placeholder="Max" type="number" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-btns">
+            <button class="apply-btn">Təsdiq et</button>
+            <button class="reset-btn">Sıfırla</button>
+          </div>
+        </div>
+        <div class="if-products-exists">
+          <div class="products-list">
+            <div class="row row-gap-4">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img src="images/product-1.png" alt="" />
+                    <div class="product-discount-percent">-50%</div>
+                    <div class="product-add-to-favourites">
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <a href="">
+                      <div class="title">Aventos HL-27</div>
+                    </a>
+                    <div class="description">Aventoslar</div>
+                    <div class="product-price-and-cart">
+                      <div class="product-price">₼199.99</div>
+                      <div class="product-add-to-cart">
+                        <i class="fa-solid fa-plus"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img src="images/product-1.png" alt="" />
+                    <div class="product-discount-percent">-50%</div>
+                    <div class="product-add-to-favourites">
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <a href="">
+                      <div class="title">Aventos HL-27</div>
+                    </a>
+                    <div class="description">Aventoslar</div>
+                    <div class="product-price-and-cart">
+                      <div class="product-price">₼199.99</div>
+                      <div class="product-add-to-cart">
+                        <i class="fa-solid fa-plus"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img src="images/product-1.png" alt="" />
+                    <div class="product-discount-percent">-50%</div>
+                    <div class="product-add-to-favourites">
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <a href="">
+                      <div class="title">Aventos HL-27</div>
+                    </a>
+                    <div class="description">Aventoslar</div>
+                    <div class="product-price-and-cart">
+                      <div class="product-price">₼199.99</div>
+                      <div class="product-add-to-cart">
+                        <i class="fa-solid fa-plus"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="product-box">
+                  <div class="product-img">
+                    <img src="images/product-1.png" alt="" />
+                    <div class="product-discount-percent">-50%</div>
+                    <div class="product-add-to-favourites">
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                  </div>
+                  <div class="product-content">
+                    <a href="">
+                      <div class="title">Aventos HL-27</div>
+                    </a>
+                    <div class="description">Aventoslar</div>
+                    <div class="product-price-and-cart">
+                      <div class="product-price">₼199.99</div>
+                      <div class="product-add-to-cart">
+                        <i class="fa-solid fa-plus"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="if-products-doesnt-exists">
+          <div class="img-container">
+            <img src="images/if-products-doesnt-exists-img.png" alt="" />
+            <div class="img-container-content">
+              <h6>Məhsul tapılmadı</h6>
+              <p>Seçdiyiniz filtirə əsasən məhsul tapılmadı</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <div class="page-item prev" aria-label="Əvvəlki səhifə">
+          <span>&lsaquo;</span>
+        </div>
+        <div class="page-item">1</div>
+        <div class="page-item active">2</div>
+        <div class="page-item">3</div>
+        <div class="page-item next" aria-label="Növbəti səhifə">
+          <span>&rsaquo;</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column footer-left">
+          <div class="footer-logo">
+            <img src="images/mcontact-footer-blue-logo.png" alt="M-Kontakt" />
+          </div>
+          <p class="logo-content">
+            M-Kontakt şirkəti Azərbaycan məkanında 2003-cü ildən bu günümüzə
+            qədər hər növ mebellərin istehsalı, mebel aksesuarlarının satışı ilə
+            məşğuldur.
+          </p>
+          <ul class="social-icons">
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+          <span class="footer-copyright"> &copy; 2025 Mkontakt </span>
+        </div>
+
+        <div class="footer-column">
+          <h6>Səhifələr</h6>
+          <ul>
+            <li><a href="index.html">Əsas səhifə</a></li>
+            <li><a href="#">Haqqımızda</a></li>
+            <li><a href="products.html">Məhsullar</a></li>
+            <li><a href="#">Bloq</a></li>
+            <li><a href="#">Əlaqə</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h6>Brendlər</h6>
+          <ul>
+            <li><a href="#">Hettich</a></li>
+            <li><a href="#">Badroom</a></li>
+            <li><a href="#">Häfele</a></li>
+            <li><a href="#">GRASS</a></li>
+            <li><a href="#">FGV</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column footer-contact">
+          <h6>Əlaqə</h6>
+          <div class="footer-contact-box">
+            <p>Texniki sorğular</p>
+            <p>
+              E-mail:
+              <a href="mailto:info@mekan360.az"
+                ><span>info@mekan360.az</span></a
+              >
+            </p>
+            <p>
+              Mobil:
+              <a href="tel:+994998686888"><span>+994 99 868 68 88</span></a>
+            </p>
+          </div>
+          <div class="footer-contact-box">
+            <p>Dəstək xidməti</p>
+            <p>
+              E-mail:
+              <a href="mailto:support@mekan360.az"
+                ><span>support@mekan360.az</span></a
+              >
+            </p>
+            <p>
+              Mobil:
+              <a href="tel:+994998686888"><span>+994 99 868 68 88</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
