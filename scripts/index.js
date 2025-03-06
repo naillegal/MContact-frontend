@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// product-detail scripts 
+// products-detail scripts 
 var adSwiper = new Swiper(".productDetailSwiper", {
   slidesPerView: 1,
   loop: true,
