@@ -464,12 +464,13 @@ footer {
   }
   .social-icons {
     display: flex;
-    gap: 10px;
+    gap: 18px;
     margin-bottom: 10px;
 
     li a {
       font-size: 18px;
       color: rgba(0, 0, 0, 1);
+      transition: 0.2s ease-in-out;
       &:hover {
         color: rgba(20, 48, 130, 1);
       }
